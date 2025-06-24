@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broder Schmidt</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inconsolata -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Use the Inconsolata font family and add anti-aliasing for smoothness */
+        body {
+            font-family: 'Inconsolata', monospace;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Style for the links in the bio */
+        .bio-link {
+            color: #2563eb; /* A nice blue color */
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+            border-bottom: 1px solid #dbeafe;
+        }
+        .bio-link:hover {
+            color: #1d4ed8;
+            background-color: #eff6ff;
+            border-bottom-color: #93c5fd;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="w-full p-6 mb-8">
+        <div class="max-w-2xl mx-auto flex justify-end">
+            <a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">About</a>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="max-w-2xl w-full mx-auto px-6 pb-12">
+        
+        <!-- Header Section with Name -->
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-gray-900">Broder Schmidt</h1>
+        </div>
+
+        <!-- Biography Section -->
+        <div class="space-y-4 text-lg leading-relaxed text-gray-700">
+            <p>
+                I’m a 
+                <a href="https://scholar.google.com/citations?user=Hl6BX-IAAAAJ&hl=en" class="bio-link" aria-label="View my Google Scholar profile">scientist</a>, 
+                <a href="https://patents.google.com/?inventor=broder+schmidt&oq=inventor:broder+schmidt" class="bio-link" aria-label="View my patents">inventor</a>, and 
+                <a href="https://prosefoods.com/" class="bio-link" aria-label="Read about my company Prose Foods">founder</a>.
+            </p>
+            <p>
+                I build at the intersection of biochemistry, polymer physics, and computational biology/AI.
+            </p>
+            <p class="font-bold">
+                My mission is to facilitate better living through biology.
+            </p>
+            <p>
+                I worked on 
+                <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(22)01500-5" class="bio-link" aria-label="Learn about my work on cancer drugs">cancer drugs</a>, 
+                <a href="https://www.nature.com/articles/s41467-019-12740-2" class="bio-link" aria-label="Learn about my work on protein pathologies">protein pathologies</a>, and 
+                <a href="https://eatlomme.com/" class="bio-link" aria-label="Learn about my work on gluten-free bread">gluten-free bread</a>.
+            
+                The common thread of these diverse endeavors has been my fascination with 
+                <a href="https://prosefoods.com/blog/disordered-proteins-and-ingredient-function" class="bio-link" aria-label="Read my blog post on IDPs">intrinsically disordered proteins (IDPs)</a>.
+            </p>
+            <p>
+                If you want to learn more, follow me on <a href="https://www.linkedin.com/in/broder-schmidt/" class="bio-link" aria-label="View my LinkedIn profile">LinkedIn</a> or <a href="mailto:broder.schmidt@proton.me" class="bio-link" aria-label="Send me an email">reach out</a>.
+            </p>
+        </div>
+
+    </main>
+
+</body>
+</html>
