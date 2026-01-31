@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /ohio_corn.html
+Disallow: /ohio_forest.html
+Disallow: /ohio_soy.html
