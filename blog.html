@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broder Schmidt - Writing</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inconsolata -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .bio-link {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+            border-bottom: 1px solid #dbeafe;
+        }
+        .bio-link:hover {
+            color: #1d4ed8;
+            background-color: #eff6ff;
+            border-bottom-color: #93c5fd;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="w-full p-6 mb-8">
+        <div class="max-w-4xl mx-auto flex justify-end space-x-4">
+            <a href="index.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">About</a>
+            <a href="science.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Research</a>
+            <a href="blog.html" class="text-gray-900 font-bold transition-colors duration-200">Writing</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl w-full mx-auto px-6 pb-12">
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-gray-900 uppercase">Writing</h1>
+        </div>
+
+        <div class="space-y-12">
+            <!-- Blog Post 2 (Latest) -->
+            <article class="space-y-2">
+                <p class="text-sm text-gray-500">June 20, 2025</p>
+                <h2 class="text-2xl font-bold text-gray-900">
+                    <a href="blog-ai-proteins.html" class="hover:text-blue-600 transition-colors">AI in Protein Research: Breakthroughs and Blind Spots</a>
+                </h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    In parallel with advancements on general purpose large language models (LLMs), computational biologists have developed sophisticated AI tools to understand protein behavior...
+                </p>
+                <a href="blog-ai-proteins.html" class="bio-link">Read more</a>
+            </article>
+
+            <!-- Blog Post 1 -->
+            <article class="space-y-2">
+                <p class="text-sm text-gray-500">May 6, 2025</p>
+                <h2 class="text-2xl font-bold text-gray-900">
+                    <a href="blog-disordered-proteins.html" class="hover:text-blue-600 transition-colors">What Disordered Proteins Reveal About Ingredient Function</a>
+                </h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Think about the creaminess of ice cream, the satisfying chew of fresh bread, or the tenderness of steak. These everyday delights are thanks to proteins...
+                </p>
+                <a href="blog-disordered-proteins.html" class="bio-link">Read more</a>
+            </article>
+        </div>
+    </main>
+
+</body>
+</html>

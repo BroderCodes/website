@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI in Protein Research: Breakthroughs and Blind Spots - Broder Schmidt</title>
+    <!-- Tailwind CSS with Typography plugin -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <!-- Google Fonts: Inconsolata -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .prose {
+            max-width: none;
+            font-family: 'Inconsolata', monospace;
+        }
+        .prose a {
+            color: #2563eb;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid #dbeafe;
+            transition: all 0.2s ease-in-out;
+        }
+        .prose a:hover {
+            color: #1d4ed8;
+            background-color: #eff6ff;
+            border-bottom-color: #93c5fd;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="w-full p-6 mb-8">
+        <div class="max-w-4xl mx-auto flex justify-end space-x-4">
+            <a href="index.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">About</a>
+            <a href="science.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Research</a>
+            <a href="blog.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Writing</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl w-full mx-auto px-6 pb-24">
+        
+        <article class="prose prose-lg prose-slate mx-auto max-w-4xl">
+            <header class="mb-12 not-prose text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">AI in Protein Research: Breakthroughs and Blind Spots</h1>
+                <div class="text-lg text-gray-600">
+                    By <a href="https://www.linkedin.com/in/broder-schmidt/" class="text-blue-600 hover:underline">Broder Schmidt</a> and <a href="https://www.linkedin.com/in/dan-griffith-85a9b524a/" class="text-blue-600 hover:underline">Dan Griffith</a>
+                </div>
+                <div class="text-sm text-gray-500 mt-2 italic">
+                    Originally published by Prose Foods on June 20, 2025
+                </div>
+            </header>
+
+            <p>In parallel with advancements on general purpose large language models (LLMs), computational biologists have developed sophisticated AI tools to understand protein behavior.</p>
+
+            <p>These include task-specific tools like <a href="https://www.alphafold.ebi.ac.uk/">AlphaFold</a>, for protein structure prediction, and versatile protein language models (pLMs) like <a href="https://esmatlas.com/">ESM</a>.</p>
+
+            <p>Unfortunately, these models, like biochemistry more broadly, misunderstand an important class of functional proteins: <a href="blog-disordered-proteins.html">intrinsically disordered proteins</a> (IDPs).</p>
+
+            <h2>Foundations for a new era in computational biology</h2>
+
+            <p>Like most domains, AI has rapidly transformed protein biochemistry. Experiments that once required a 5+ year PhD thesis can now be run in minutes on a laptop. Ask any structural biologist: no more endless construct design, tedious protein purification, or perpetual crystallization trials. Instead, enter your protein sequence into AlphaFold and solve its structure while you have a coffee.</p>
+
+            <p>These breakthroughs were only recently made possible by:</p>
+
+            <ol>
+                <li>Better hardware, including more powerful and <a href="https://epoch.ai/blog/trends-in-gpu-price-performance">cheaper GPUs</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S0959440X25000223#sec2">Foundation models</a> for protein sequence-based tasks</li>
+                <li>High quality, large, open-access data, including the <a href="https://www.rcsb.org/stats/growth/growth-released-structures">Protein Data Bank</a> and <a href="https://www.uniprot.org/uniprotkb/statistics">UniProt</a></li>
+            </ol>
+
+            <p>AlphaFold has best exemplified what is possible on this foundation. Published in 2020, it was the first protein <a href="https://www.nature.com/articles/s41586-019-1923-7">structure prediction model</a> to use deep learning. Updates in 2021 and 2024 improved its <a href="https://www.nature.com/articles/s41586-021-03819-2">accuracy</a> and extended its prediction capabilities to <a href="https://www.nature.com/articles/s41586-024-07487-w">biomolecular interactions</a>.</p>
+
+            <p>The holy grail of biochemistry seemed within reach: we could understand the function of any protein with atomic resolution. This is because most scientists mistakenly believe that the function of a protein depends on its 3D shape.</p>
+
+            <p>Of course, IDPs also perform <a href="blog-disordered-proteins.html">essential functions</a> despite lacking stable 3D structures. AlphaFold is poorly suited for them, often introducing artificial structural order in its predictions.</p>
+
+            <p>Protein language models (pLMs) are the next frontier for deep learning protein models. They "learn" the universal laws of proteins directly from sequence, without requiring additional experimental data inputs. As LLMs understand natural language by connecting words, pLMs understand proteins by connecting non-obvious, yet statistically significant sequence patterns. Foundation pLMs like <a href="https://www.science.org/doi/10.1126/science.ade2574">ESM2</a> and <a href="https://ieeexplore.ieee.org/document/9477085">ProtT5</a> infuse deeper background knowledge into tasks, including the prediction of <a href="https://www.science.org/doi/10.1126/science.ade2574">protein structure</a>, <a href="https://elifesciences.org/articles/82593">stability</a>, or <a href="https://academic.oup.com/nar/article/50/W1/W228/6576357#364379338">subcellular localization</a>.</p>
+
+            <p>In theory, this should make pLMs a useful tool to study all proteins.</p>
+
+            <h2>IDPs pose unique challenges for deep learning</h2>
+
+            <p>State-of-the-art pLMs also struggle with IDPs. IDPs pose three fundamental challenges for deep learning. Compared to folded proteins, IDPs have:</p>
+
+            <ol>
+                <li>Less training data</li>
+                <li>Lower sequence conservation</li>
+                <li>More obscure sequence-to-function relationships</li>
+            </ol>
+
+            <h3>1. IDPs have less available training data</h3>
+
+            <p>High-quality sequence and experimental data is scarce for IDPs, leading to models' poor performance on IDP-related tasks. Consider how LLMs perform worse on problems posed in <a href="https://arxiv.org/abs/2304.05613">less-common languages</a>.</p>
+
+            <p>Less than 20% of proteins in microorganisms are fully- or partially-disordered, yet microbial proteins account for 2 in 3 UniProt entries. In multicellular organisms, up to 45% of proteins are fully- or partially-disordered. Consequently, IDPs are severely under-represented in PLM training sets.</p>
+
+            <figure>
+                <img src="images/Blog2_Img1.png" alt="Distribution of disordered proteins" class="w-full rounded-lg shadow-sm">
+                <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Distribution of fully-disordered (>80% disordered residues), fully-structured (<20%), and partially disordered proteins in various proteomes.</figcaption>
+            </figure>
+
+            <p>Beyond sequence repositories, the open-source Protein Data Bank is a cornerstone of deep learning model development. It is a curated database containing >200,000 experimentally-determined protein structures that is used across <a href="https://www.embl.org/news/science/alphafold-using-open-data-and-ai-to-discover-the-3d-protein-universe/">training</a>, validation, and fine-tuning.</p>
+
+            <p>No such ground-truth experimental databases exist for IDPs.</p>
+
+            <h3>2. IDPs have lower sequence conservation</h3>
+
+            <p>Proteins are linear strings of amino acids. Folded proteins from related species often share the exact order of amino acids, while the sequence of IDPs from those same species can vary significantly. This holds true even for <a href="https://www.nature.com/articles/s41467-019-12740-2">essential proteins</a> with both folded and disordered domains. The low sequence conservation of IDPs makes it more difficult for deep learning models to extract meaningful patterns across species.</p>
+
+            <p>This low sequence conservation manifests in two ways: more total, and fewer correlated amino acid mutations than folded proteins. Any given pair of mutations is likely random in IDPs, whereas pairwise mutations often reveal profound <a href="https://www.nature.com/articles/s41588-019-0431-x">insights</a> into folded proteins. This means that disordered domains have a lower signal-to-noise ratio than folded domains.</p>
+
+            <h3>3. IDPs have more obscure sequence-to-function relationships</h3>
+
+            <p>The fixed structures of folded proteins often determine their functions. Enzymes have a pocket that binds a specific substrate. The geometry of the binding pocket and the spatial arrangement of catalytic residues dictates the substrate specificity and chemical activity. These functional and structural signatures are reflected in <a href="https://www.jbc.org/article/S0021-9258(17)48328-1/fulltext">enzyme sequence</a> and can be <a href="https://www.biorxiv.org/content/10.1101/2024.05.03.592223v2.abstract">learned by pLMs</a>.</p>
+
+            <p>Such a direct sequence-structure-function link doesn't apply to IDPs. Their biological purposes stem from constant shape shifting and environmental responsiveness. The hallmark of IDPs is that they engage in <a href="https://doi.org/10.1016/j.sbi.2023.102742">multiple, weak interactions</a> with other biomolecules that continuously form and break.</p>
+
+            <p>Compared to folded proteins, <a href="https://www.cell.com/trends/biochemical-sciences/abstract/S0968-0004(07)00285-X?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS096800040700285X%3Fshowall%3Dtrue">functional signatures</a> are thus "fuzzy" in IDPs. This makes it much harder for pLMs to identify functionally-relevant sequence motifs and patterns.</p>
+
+            <h2>Our approach: feature-based models and customized pLMs</h2>
+
+            <p>The inherent dynamism of IDPs requires a fundamental rethinking of how we develop protein AI models, from training data to model evaluation. At Prose Foods, we combine two approaches to account for these unique challenges.</p>
+
+            <h3>Sequence features, not just primary sequence</h3>
+
+            <p>Before founding Prose Foods, we showed that the <a href="https://www.science.org/doi/10.1126/science.aaw8653">behavior</a> and <a href="https://www.nature.com/articles/s41467-019-12740-2">function</a> of IDPs is encoded in <a href="https://elifesciences.org/articles/04251">conserved high-order patterns</a> than primary amino acid sequence. This finding broke with the established paradigm that protein function is intimately linked to the exact order of adjacent amino acids.</p>
+
+            <p>Two categories of sequence patterns define IDP behavior:</p>
+
+            <ol>
+                <li><strong>Compositional features</strong> describe the types and frequency of amino acids within a sequence, irrespective of their order. For example, the proportion of positively and negatively charged amino acids.</li>
+                <li><strong>Distributional features</strong> account for the order and arrangement of amino acids along a protein. Examples include the patterning of hydrophobic or polar, uncharged amino acids.</li>
+            </ol>
+
+            <p>Since we already know which features are important for IDP behavior and function, we use them directly in custom <a href="https://www.science.org/doi/10.1126/science.aaw8653">discriminative models</a> (rather than hope that pLMs learned them from scratch and encoded them in embeddings). Our models are directed to learn the most relevant sequence features for a specific target functionality.</p>
+
+            <p>To accomplish this, we curate class(es) of protein sequences with the desired functionality. We then calculate the distribution of 1,000+ higher-order sequence features in the target class and a background class of random IDPs.</p>
+
+            <p>Next, we train ML classifiers to learn which features best describe the target class based on these distributions. It does so by assigning individual weights to each sequence feature. When we query the model with a candidate protein sequence, it calculates the probability that the query has the target functionality.</p>
+
+            <figure>
+                <img src="images/Blog2_Img2.png" alt="Predictive model of IDP class" class="w-full rounded-lg shadow-sm">
+                <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Using sequence features to build a predictive model of a target IDP class. The distribution of 3 sequence features for a target IDP class and a background class are computed. Features with a greater discrepancy between the target and background classes are weighted more heavily in the logistic regression model. Query IDPs are scored by the model according to the value of their sequence features relative to these target and background distributions.</figcaption>
+            </figure>
+
+            <p>Only the square exhibits features consistent with the target class for every feature, giving it the highest probability of possessing that same functionality.</p>
+
+            <p>By focusing only on biologically-relevant sequence features, we create interpretable models and minimize overfitting. The learned weights directly quantify the importance of each feature, providing meaningful insights into the underlying biochemistry, and the protein's actual performance in the kitchen.</p>
+
+            <h2>Adapting PLMs to better focus on IDPs</h2>
+
+            <p>In parallel to our discriminative models, we adapt foundation pLMs to IDP-specific tasks. Deep learning can uncover universal rules that have evaded IDP researchers. However, this requires correcting the flaws that foundation models face with IDPs.</p>
+
+            <p>We begin by fine-tuning open-source pLMs on custom datasets, curated to better represent the entire IDP sequence space. This targeted training corrects the inherent bias of foundation models, compelling them to learn the specific principles governing disordered regions.</p>
+
+            <p>We monitor this process to confirm the model is learning about IDPs without "forgetting" its knowledge of structured proteins. Throughout the training, we track key performance metrics (e.g., perplexity, mask prediction accuracy) on separate validation sets for both protein types, ensuring targeted improvement without compromising general performance.</p>
+
+            <p>Fine-tuned models are then validated to confirm their enhanced capabilities. These tests verify that the models can identify similar IDPs, take disordered regions into account during protein clustering, and more accurately predict IDP properties like chain dimensions.</p>
+
+            <p>Another neat way to demonstrate model improvement is to compare the per-residue embeddings of a protein with both folded (FD) and disordered (IDR) regions. Principal component analysis of the embeddings shows that our fine-tuned model produces a more compact and distinct cluster for the IDR (indicating a more consistent representation than the base model). This shows that the model has learned to distinguish between structured and disordered domains. It no longer over-indexes on structural features that are irrelevant to the function of disordered regions.</p>
+
+            <figure>
+                <img src="images/Blog2_Img3.png" alt="Per-residue embeddings" class="w-full rounded-lg shadow-sm">
+                <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Representative per-residue embeddings from a base and fine-tuned pLM, computed for a protein with a folded domain (FD) and disordered domain (IDR).</figcaption>
+            </figure>
+
+            <p>We use our fine-tuned model to generate custom embeddings that we then use as features for classifiers that group proteins according to their function in food. We focus on functions that shape the taste and texture of food, such as the ability to form cheese curds with fats at low pH or chewy bread crumbs with starches during baking.</p>
+
+            <h2>Conclusion</h2>
+
+            <p>While AI has revolutionized protein research, state-of-the-art models often overlook or struggle with IDPs. This is a major hurdle to developing better food ingredients.</p>
+
+            <p>At Prose Foods, we overcome these hurdles by building next-generation AI tools specifically designed to understand and utilize IDPs. This allows us to bring natural, clean-label food ingredients with advanced functionalities to the table.</p>
+
+        </article>
+
+    </main>
+
+</body>
+</html>

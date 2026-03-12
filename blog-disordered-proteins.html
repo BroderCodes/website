@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Disordered Proteins Reveal About Ingredient Function - Broder Schmidt</title>
+    <!-- Tailwind CSS with Typography plugin -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <!-- Google Fonts: Inconsolata -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom styles for the "prose" class to use Inconsolata and match theme */
+        .prose {
+            max-width: none;
+            font-family: 'Inconsolata', monospace;
+        }
+        .prose a {
+            color: #2563eb;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid #dbeafe;
+            transition: all 0.2s ease-in-out;
+        }
+        .prose a:hover {
+            color: #1d4ed8;
+            background-color: #eff6ff;
+            border-bottom-color: #93c5fd;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="w-full p-6 mb-8">
+        <div class="max-w-4xl mx-auto flex justify-end space-x-4">
+            <a href="index.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">About</a>
+            <a href="science.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Research</a>
+            <a href="blog.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Writing</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl w-full mx-auto px-6 pb-24">
+        
+        <article class="prose prose-lg prose-slate mx-auto max-w-4xl">
+            <header class="mb-12 not-prose text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">What Disordered Proteins Reveal About Ingredient Function</h1>
+                <div class="text-lg text-gray-600">
+                    By <a href="https://www.linkedin.com/in/broder-schmidt/" class="text-blue-600 hover:underline">Broder Schmidt</a>
+                </div>
+                <div class="text-sm text-gray-500 mt-2 italic">
+                    Originally published by Prose Foods on May 6, 2025
+                </div>
+            </header>
+
+            <figure>
+                <img src="images/Blog1_Img1.gif" alt="Disordered proteins animation" class="w-full rounded-lg shadow-sm">
+                <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Disordered proteins do not have a stable structure, instead continuously adopting different structural conformations.</figcaption>
+            </figure>
+
+            <p>Think about the creaminess of ice cream, the satisfying chew of fresh bread, or the tenderness of steak. These everyday delights are thanks to proteins, but there's a fascinating disconnect between how these proteins actually function and how biochemistry has understood them.</p>
+
+            <p>For decades, biochemists learned that <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1131670/">"structure equals function:"</a> the 3D shape of a protein enables it to catalyze chemical reactions, bind to other molecules, move molecular cargo, or transduce molecular signals. Cells have an elaborate system of quality control mechanisms to ensure the proper folding of proteins and the swift degradation of damaged proteins.</p>
+
+            <p>Every biochemist knows that working with proteins can be finicky. The wrong temperature, salt concentration, or pH can destroy protein structure. Yet, these are the <a href="https://www.saltfatacidheat.com/">primary parameters</a> that we adjust in the kitchen, often precisely to denature proteins for <a href="https://www.sciencedirect.com/science/article/abs/pii/S0047248409001262">increased digestibility</a> or new behaviors.</p>
+
+            <p>As a result, "structure is function" cannot explain how proteins contribute to the texture, appearance, mouthfeel, and flavor of our favorite foods. This leaves a critical gap for frameworks that can explain the behavior of food proteins based on generalizable rules.</p>
+
+            <h2>How can we fill this gap?</h2>
+
+            <p>At Prose Foods, we realized that the path forward lies in applying novel insights from frontier biomedical research on a unique class of biopolymers: <a href="https://pubs.acs.org/doi/full/10.1021/cr400525m">intrinsically disordered proteins</a> (IDPs). IDPs lack defined, stable structures and continuously adopt new structural conformations. They perform a myriad of vital functions from cells to organs, defying the "structure is function" tenet.</p>
+
+            <p>This post explores how we're applying our last decade of research on IDPs to build predictive models that connect protein characteristics to food attributes, opening the door to the next generation of food ingredients.</p>
+
+            <h2>The Problem: A (Food) Science Blind Spot</h2>
+
+            <p>"Structure is function" has been the bedrock of protein biochemistry since the first atomic insights into the <a href="https://www.nobelprize.org/prizes/chemistry/1962/summary/">structure</a> and <a href="https://www.nobelprize.org/prizes/chemistry/1972/summary/">function</a> of globular proteins in the 1960s and 1970s. Research since has overwhelmingly focused on understanding how linear chains of amino acids fold into 3D shapes and the resulting function. This has yielded incredible achievements like the rational design of blockbuster drugs to <a href="https://www.annualreviews.org/content/journals/10.1146/annurev.biophys.27.1.249">treat AIDS</a> or <a href="https://www.cell.com/trends/pharmacological-sciences/abstract/S0165-6147(12)00036-3">prevent blood clotting</a>. Recently, focus shifted to predicting how proteins fold. Google DeepMind's <a href="https://alphafold.ebi.ac.uk/">AlphaFold</a> won a <a href="https://www.nobelprize.org/prizes/chemistry/2024/summary/">Nobel Prize</a> last year for their achievements in this space.</p>
+
+            <p>This framework treated unstructured proteins as temporary intermediates or dead-ends caused by damage or disease. The dominance of the "structure is function" view blinded scientists to the ubiquity of disorder in <a href="https://www.tandfonline.com/doi/abs/10.1080/07391102.2012.675145">eukaryotic proteomes</a> and its role in encoding essential protein functions. These functions include regulating <a href="https://pubs.acs.org/doi/abs/10.1021/bi0602718">transcription</a>, forming selective barriers for <a href="https://www.cell.com/trends/biochemical-sciences/abstract/S0968-0004(15)00209-1?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S0968000415002091?showall%3Dtrue">macromolecular transport</a>, or measuring complex <a href="https://www.science.org/doi/10.1126/sciadv.adu3194">physicochemical parameters</a>. Beyond cells, IDPs are responsible for <a href="https://cdnsciencepub.com/doi/abs/10.1139/O09-161">connective tissue elasticity</a>, maintaining <a href="https://www.pnas.org/doi/10.1073/pnas.2213765120#supplementary-materials">eye lens transparency</a>, or mediating <a href="https://www.nature.com/articles/ncomms9737">underwater mussel adhesion</a>. IDPs self-assemble into <a href="https://www.cell.com/trends/cell-biology/abstract/S0962-8924(18)30028-X?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S096289241830028X?showall%3Dtrue">supramolecular materials</a> in a sequence- and environment-dependent manner.</p>
+
+            <p>This blind spot extends beyond biomedicine. For <a href="https://www.pnas.org/doi/10.1073/pnas.1801071115">14,000 years</a>, humans have unknowingly leveraged IDPs to prepare food, manipulating <a href="https://pubs.rsc.org/en/content/articlelanding/2014/ra/c3ra45522j">gluten</a> (major wheat protein) for airy, chewy baked goods, and <a href="https://www.eurekaselect.com/article/65400">casein</a> (major dairy protein) to form cheese and yogurt from milk.</p>
+
+            <p><strong>This myopia has wide-ranging consequences:</strong></p>
+
+            <ol>
+                <li>Scientists often treat gluten and casein as <a href="https://substack.fiftyyears.com/p/nobell-foods">fringe proteins</a> with unusual properties, rather than as part of a broader protein class governed by general rules.</li>
+                <li>Food science has depended on recombining the same set of ingredients from a few hyper-optimized supply chains, instead of broadly searching for the most performant ingredients.</li>
+                <li>Data science-based approaches assume the need to simulate every possible protein behavior and combination to understand how proteins might behave after processing.</li>
+            </ol>
+
+            <h2>Our Solution: Learning From Disordered Proteins</h2>
+
+            <p>In food, the folded, tertiary structure of a protein is less relevant than how its primary amino acid sequence behaves within dynamic food processing environments. We realized that the fundamentals of IDP behavior apply broadly, including to food proteins that are natively unstructured or lose their structure during food preparation.</p>
+
+            <p><strong>At Prose Foods, our thesis is:</strong> by understanding how the sequence and environment of IDPs affect their interactions with themselves and other ingredients, we can predict how intrinsically disordered—or forcibly unfolded—proteins behave before, during, and after food processing, and dictate consumer experiences. In other words, we understand the interplay between protein sequence and <a href="https://www.saltfatacidheat.com/">salt, fat, acid, heat</a> during mixing, kneading, cooking, baking, and eating.</p>
+
+            <p>By analyzing food proteins through the lens of IDPs, we are moving beyond slow and costly protein characterization by trial-and-error, towards rationally matching proteins to food applications based on sequence-encoded rules that drive behavior in complex systems.</p>
+
+            <h2>Deep Dive: The Biophysics of IDPs</h2>
+
+            <p>How do sequence and environment shape the behavior of IDPs?</p>
+
+            <p>Imagine a single IDP molecule in water. Instead of residing in a single fixed conformation, the IDP constantly and rapidly adopts different structural configurations. The collection of these interconverting conformations, known as an "ensemble," can be quantitatively described using various parameters such as the radius of gyration, end-to-end distance, hydrodynamic radius, and inter-residue distances. Molecular interactions encoded in the amino acid sequence, and shaped by the environment, govern IDP ensemble properties.</p>
+
+            <figure>
+                <img src="images/Blog1_Img2.png" alt="Ensemble properties of IDPs" class="w-full rounded-lg shadow-sm">
+                <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Example ensemble properties.</figcaption>
+            </figure>
+
+            <p>If placed into ethanol instead of water, the ethanol will reduce hydrogen bonding, strengthen electrostatic forces, and weaken hydrophobic interactions within the IDP ensemble, and between the IDP ensemble and the solvent molecules. These changes dramatically alter the ensemble properties of the IDP.</p>
+
+            <p>Next, imagine many IDP molecules in the solution. These molecules continuously explore potential ensembles and, as part of this process, complementary residues within each IDP sequence dynamically engage and disengage with each other. When the number of IDPs crosses a threshold, residue interactions extend beyond individual IDP chains.</p>
+
+            <p>Suddenly, residues in nearby IDP chains are more likely to interact than residues in the same chain. If the number (valency) and strength (affinity) of these interactions is high enough, the interacting IDP molecules form a network with emergent properties, distinct from the ensemble properties. Depending on the combination of sequence, concentration, and environment, these IDP networks can range from supramolecular complexes in solution to system-spanning gels or solids.</p>
+
+            <p>Polymer physicists describe this as a sequence- and environment-dependent phase transition, which they quantify using phase diagrams.</p>
+
+            <p>Consider the process of <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780124170124000442">making cheese from milk</a>. Adding acid triggers the rearrangement of casein molecules into semi-solid networks (curds). We can model this process using a two state phase diagram. The axes are casein concentration and pH, and the two states are the liquid milk phase and the solid curd phase.</p>
+
+            <figure>
+                <img src="images/Blog1_Img3.png" alt="Phase diagram of IDP" class="w-full rounded-lg shadow-sm">
+                <figcaption class="text-center text-sm text-gray-500 mt-2 italic">Two state phase diagram of IDP concentration x pH.</figcaption>
+            </figure>
+
+            <p>The phase diagram tells us which conditions (casein concentration and pH) allow curd formation. The line that separates the liquid (milk) and solid (curd) phases is the binodal. Cheesemaking recipes are natural language instructions for how to cross the binodal and trigger the phase separation of casein.</p>
+
+            <p>The axis could also be temperature, salt concentration, or another factor that alters protein sequence. In cheesemaking, the latter is often milk-clotting enzymes that cleave specific casein molecules. Adding temperature, salt concentration, and enzymes as variables to a multi-dimensional phase diagram better represents food making.</p>
+
+            <h2>A New Era for Food Ingredients</h2>
+
+            <p>Decoding the fundamental principles governing IDPs and applying them to food is the first step toward rational ingredient discovery. It is essential for systematically finding novel, performant ingredients from more biodiverse sources. A deep understanding of and appreciation for nature's solutions underpins our approach. We can meet consumer preferences across many dimensions—from health to sustainability—by looking across the billions of natural plant proteins and finding the exact match for a specific experience.</p>
+
+            <p>By mapping the sensory properties of food to protein sequence, biochemistry, and processing environment, we can rapidly discover new ingredients (or even biomaterials). Our approach uniquely results in:</p>
+
+            <ol>
+                <li>Accelerated innovation</li>
+                <li>Programmable ingredients</li>
+                <li>Supply chain resilience</li>
+            </ol>
+
+            <h3>Accelerated innovation</h3>
+
+            <p>Our predictive framework accelerates the development of novel food ingredients. Our models do not predict the folded structure of a protein, but instead understand how proteins will behave within real world environments and as a result of intentional processing. This improves the "hit rate" from model to kitchen: each uncovered protein has the highest likelihood of yielding great tasting food, with all the desired attributes.</p>
+
+            <h3>Programmable ingredients</h3>
+
+            <p>IDPs can be precisely "programmed" by tuning both their sequence and environment to create bespoke ingredients, such as texturizers, emulsifiers, fortifiers, fibers, or films. In materials, this programmability allows for the design of "smart" polymers that respond to environmental stimuli or can self-heal.</p>
+
+            <h3>Supply chain resilience</h3>
+
+            <p>For millennia, food preferences followed nature, driven by what was accessible and abundant. Humans narrowed their food choices to the point that half of all calories come from <a href="https://www.weforum.org/stories/2018/10/once-neglected-these-traditional-crops-are-our-new-rising-stars/">three crops</a> today.</p>
+
+            <p>To future-proof ingredient supply, reduce waste, and maximize value for growers, humanity needs to diversify its food sources. We must look to under-appreciated, better-for-the-planet value chains. Our ingredients come from underutilized, regenerative, and resilient crops, or upcycled agricultural waste streams.</p>
+
+        </article>
+
+    </main>
+
+</body>
+</html>
