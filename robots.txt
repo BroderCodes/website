@@ -2,3 +2,5 @@ User-agent: *
 Disallow: /ohio_corn.html
 Disallow: /ohio_forest.html
 Disallow: /ohio_soy.html
+Disallow: /ca_forest_biomass.html
+Disallow: /ca_orchard_wood.html
